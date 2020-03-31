@@ -1,4 +1,4 @@
-//数组搜索
+//数组搜索_
 #include <stdio.h>
 int serach(int x,int a[],int len);
 int max(int a[],int len);
