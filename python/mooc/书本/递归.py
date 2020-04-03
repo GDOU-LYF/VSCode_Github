@@ -8,7 +8,8 @@ def reverse(s):
     if s=="":
         return s
     else:
-        return reverse(s[1:])+s[0]
+        ret=reverse(s[1:])
+        return ret+s[0]
 
 #递归一定要设计基例!!!
 def main():
