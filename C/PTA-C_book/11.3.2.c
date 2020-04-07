@@ -58,7 +58,7 @@ int main(){
     return 0;
 }
 
-void add_(List*plist,int number){
+void add_(List*plist,int number){//添加结点
             Node *p=(Node*)malloc(sizeof(Node));
             p->value=number;
             p->next=NULL;
@@ -73,7 +73,7 @@ void add_(List*plist,int number){
             }
         // return head;
 }
-void Print(List *plist){
+void Print(List *plist){//输出
     Node *p;
     for(p=(*plist).head;p;p=p->next){
         printf("%d\t",p->value);
@@ -82,7 +82,7 @@ void Print(List *plist){
 
 }
 
-void Node_Find(List *plist,int number){
+void Node_Find(List *plist,int number){//寻找
     Node *p;
     int isFound=0;
     for(p=plist->head;p;p=p->next){
