@@ -6,7 +6,6 @@ typedef struct _node{
 }Node;
 typedef struct _list{
     Node *head;
-
 }List;
 void add_(List*plist,int number);
 void Print(List *plist);
@@ -68,8 +67,8 @@ void add_(List*plist,int number){//添加结点
                     last=last->next;
                 }
                 last->next=p;
-            // }else{
-            //     head=p;
+            }else{
+                plist->head=p;
             }
         // return head;
 }
