@@ -8,6 +8,6 @@ print(jieba.lcut("广东海洋大学是一个好大学"))
 
 
 import MeCab
-mecab = MeCab.Tagger ("-Ochasen")
+mecab = MeCab.Tagger ("-Owakati")
 sentence = '太郎はこの本を二郎を見た女性に渡した。'
 print(mecab.parse(sentence))
