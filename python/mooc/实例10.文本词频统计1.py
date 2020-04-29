@@ -1,5 +1,6 @@
 import jieba
 import MeCab
+import wordcloud
 def getText(file):
     txt=open(file,"r").read()
     txt=txt.lower()
@@ -44,6 +45,9 @@ def getlist_Mecab(file):
     mecab = MeCab.Tagger ("-Owakati")
     txt=mecab.parse(txt)#string
     words=txt.split()
+    c = wordcloud.WordCloud( width = 1000, height = 700,font_path = "C:\WINDOWS\FONTS\MSGOTHIC.TTC",max_words=35)
+    c.generate(" ".join(words))
+    c.to_file("pywcloud.png")
     counts={}
     for word in words:
         if word not in excludes_str:
