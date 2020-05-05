@@ -50,3 +50,12 @@ try:
     print (dict)
 except:
     print ("Erro3")
+
+str = eval(input("请输入："))
+#[x*5 for x in range(2,10,2)] 
+#x=2 ret=2*5=10
+#x=4 ret=4*5=20
+#6,30
+#8,40
+#10(取不到)
+print ("你输入的内容是: ", str)
