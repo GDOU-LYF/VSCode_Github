@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main(){
-    unsigned int n,s=0;
+    unsigned int n,s=1;
+    unsigned int rn[51]={0,1};
     scanf("%d",&n);
-    unsigned int rn=1;
-    for (int i=1;i<=n;i++,rn=1){
-        for(int j=2;j<=i;j++){
-            rn*=j;
-        }
-        s+=rn;
+    for(int i=2;i<=n;i++){
+        rn[i]=rn[i-1]*i;
+    }
+    for (int i=2;i<=n;i++){
+        s+=rn[i];
     }
     printf("%u",s);
 
