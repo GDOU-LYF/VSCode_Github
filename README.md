@@ -44,8 +44,8 @@
 
 洛谷
 
-![image-20200515110933295](picture/README/image-20200515110933295.png)
+<img src="picture/README/image-20200515110933295.png" alt="image-20200515110933295" style="zoom: 80%;" />
 
-![image-20200515110950445](picture/README/image-20200515110950445.png)
+<img src="picture/README/image-20200515110950445.png" alt="image-20200515110950445" style="zoom:80%;" />
 
-![image-20200515111006680](picture/README/image-20200515111006680.png)
+<img src="picture/README/image-20200515115141525.png" alt="image-20200515115141525" style="zoom:80%;" />
