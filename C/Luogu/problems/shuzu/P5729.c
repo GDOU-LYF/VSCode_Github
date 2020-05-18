@@ -10,8 +10,5 @@ int main(){
         scanf("%d %d %d %d %d %d %d",&q1[i][0],&q1[i][1],
         &q1[i][2],&q1[i][3],&q1[i][4],&q1[i][5]);
     }
-    
-
-
     return 0;
 }
