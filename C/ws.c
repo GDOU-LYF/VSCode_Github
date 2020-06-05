@@ -4,16 +4,16 @@ void ws(int n){
     int count=0;
     for (int i=1;i<n;i++){
         if(n%i==0){
-            a[count++]=i;
+            a[count++]=i;//记录值和数组大小
         }
     }
     int sum=0;
     for (int i=0;i<count;i++){
-        sum+=a[i];
+        sum+=a[i];//将完数因子放入数组先的数加和起来
     }
-    if(sum==n){
-        printf("%d(",n);
-        for (int i=0;i<count;i++){
+    if(sum==n){//说明是完数
+        printf("%d(",n);//先输出完数
+        for (int i=0;i<count;i++){//输出完数因子
             if(i==count-1){
                 printf("%d);",a[i]);
             }else{
