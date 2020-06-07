@@ -11,7 +11,7 @@
 #include <iostream>
 using namespace std;
 
-TicketMachine::TicketMachine():PRICE(0) {
+TicketMachine::TicketMachine():PRICE(0),balance(0),total(0) {
 	// TODO Auto-generated constructor stub
 
 }
