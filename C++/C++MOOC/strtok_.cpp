@@ -18,18 +18,15 @@
  
 int main () {
    char str[80] = "Wang Hao,21,1300012703,91,96,94,89";
-//    const char s[2] = "-";
    char *token;
    
-   /* 获取第一个子字符串 */
-   token = strtok(str, ",");
+   token = strtok(str, ",");// 获取第一个子字符串
    
-   /* 继续获取其他的子字符串 */
    while( token != NULL ) {
-      printf( "%s\n", token );
-    
-      token = strtok(NULL, ",");
+      printf( "%s\n", token );//输出
+      token = strtok(NULL, ",");// 继续获取其他的子字符串 
+      //如要获取原字符串的内容,strtok第一个参数必须是NULL!
    }
-   printf("%s",str);//初始的字符串被修改
+   printf("%s",str);//初始的字符串被修改,输出分割后的第一段内容
    return(0);
 }
