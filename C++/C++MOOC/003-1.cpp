@@ -6,7 +6,7 @@ public:
 	A(int n=123){
         val=n;
     }
-    A & GetObj(){
+     A & GetObj (){
         return *this;
     }
 };

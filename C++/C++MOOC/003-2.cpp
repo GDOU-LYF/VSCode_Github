@@ -14,6 +14,7 @@ public:
     Big(int n):b(n){
         v=n;
     }
+	Big(const Big & x):v(x.v),b(x.v){} //可有可无,无的时候会强制类型转换,有const和无const都可以
 
 // 在此处补充你的代码
 };
