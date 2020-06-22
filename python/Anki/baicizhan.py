@@ -90,8 +90,9 @@ class Baicizhan(WebService):
         url=self._get_field('st')
         str_list=url.split()
         for i in range(len(str_list)):#对相应的word加粗,用于Anki遮挡
-            if str_list[i] ==self.word or str_list[i] ==self.word+'.' or str_list[i] ==self.word+',':
-                str_list[i]= "<b>"+self.word+"</b>"
+            if str_list[i].find(self.word)!=-1:
+                # str_list[i]= "<b>"+self.word+"</b>"
+                str_list[i]=str_list[i].replace(self.word, "<b>"+self.word+"</b>")
                 break
         return " ".join(str_list)
 
