@@ -95,7 +95,7 @@ class Baicizhan(WebService):
         #         str_list[i]=str_list[i].replace(self.word, "<b>"+self.word+"</b>")
         #         break
         # return " ".join(str_list)
-         return url.replace(self.word, "<b>"+self.word+"</b>")
+        return url.replace(self.word, "<b>"+self.word+"</b>")
 
     @export(u'例句翻译', 5)
     def fld_sttr(self):
