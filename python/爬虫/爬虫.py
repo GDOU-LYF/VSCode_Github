@@ -11,5 +11,5 @@ def getHTMLText(url): #通用代码框架
         return "异常"
 
 if __name__=="__main__":
-    url="https://www.bilibili.com/"
+    url="https://www.weblio.jp/content/%E3%81%82%E3%81%BE%E3%82%8A"
     print(getHTMLText(url))
